@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <h1>hello world!</h1>
+  </div>
 </template>
 
 <script>
@@ -12,7 +13,7 @@
 
 </script>
 
-<style lang="sass">
+<style lang="scss">
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -20,5 +21,8 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+    & .class {
+      display: none;
+    }
   }
 </style>
