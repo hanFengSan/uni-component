@@ -15,4 +15,5 @@ if (typeof window !== "undefined" && window.Vue) {
     install(window.Vue);
 }
 
-module.exports = Object.assign(UniComponent, {install});   // eslint-disable-line no-undef
+var tmp = Object.assign(UniComponent, {install});   // eslint-disable-line no-undef
+module.export = tmp;
