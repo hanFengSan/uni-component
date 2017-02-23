@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-var utils = require('./utils');
 
 function resolve(dir) {
     return path.join(__dirname, '..', dir)
@@ -11,8 +10,8 @@ module.exports = {
         main: './src/index.js'
     },
     output: {
-        path: path.resolve(__dirname, '../dist'),
-        publicPath: '/dist/',
+        path: path.resolve(__dirname, '../example_build'),
+        publicPath: '/example_build/',
         filename: 'uni-component.js',
         library: 'uni-component',
         libraryTarget: 'umd',
@@ -59,7 +58,7 @@ module.exports = {
                 loader: 'url-loader',
                 query: {
                     limit: 10000,
-                    name: utils.assetsPath('img/[name].[hash:7].[ext]')
+                    name: 'img/[name].[hash:7].[ext]'
                 }
             }, {
                 test: /\.(html|tpl)$/,

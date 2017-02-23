@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <h1>I'm a button.</h1>
-    </div>
+    <button class="uni-button">Button</button>
 </template>
 
 <script>

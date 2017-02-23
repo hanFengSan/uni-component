@@ -6,13 +6,18 @@
   "private": true,
   "scripts": {
     "dist:dev": "webpack --config build/webpack.dist.dev.conf.js",
-    "dev": "node build/dev-server.js",
     "example": "webpack-dev-server --config build/webpack.example.conf.js",
+    "dist:style": "gulp --gulpfile build/build-style.js",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.5.0",
     "vue": "^2.1.10",
     "vue-html": "^0.3.0",
     "webpack-dev-server": "^2.4.1"
