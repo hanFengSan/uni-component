@@ -4,7 +4,7 @@ import Vue from "vue"
 import App from "./App"
 import UniComponent from "../src/index"
 
-console.log(UniComponent);
+// console.log(UniComponent);
 Vue.use(UniComponent);
 
 /* eslint-disable no-new */

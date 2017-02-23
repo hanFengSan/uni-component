@@ -1,16 +1,14 @@
 <template>
   <div id="app">
     <h1>hello world!!!</h1>
+    <uni-button></uni-button>
   </div>
 </template>
 
 <script>
-  // import { Button } from 'uni-component';
 
   export default {
-    name: 'app',
-    components: {
-    }
+    name: 'app'
   }
 
 </script>

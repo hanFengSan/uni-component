@@ -1,7 +1,7 @@
-import Button from "./components/button"
+import UniButton from "./components/uni-button"
 
 const UniComponent = {
-    Button
+    UniButton
 }
 
 const install = function (Vue) {
@@ -15,5 +15,4 @@ if (typeof window !== "undefined" && window.Vue) {
     install(window.Vue);
 }
 
-var tmp = Object.assign(UniComponent, {install});   // eslint-disable-line no-undef
-module.export = tmp;
+export default Object.assign(UniComponent, {install});;

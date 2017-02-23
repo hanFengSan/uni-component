@@ -7,14 +7,15 @@
   "scripts": {
     "dist:dev": "webpack --config build/webpack.dist.dev.conf.js",
     "dev": "node build/dev-server.js",
+    "example": "webpack-dev-server --config build/webpack.example.conf.js",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit"
   },
   "dependencies": {
-    "node-sass": "^4.5.0",
-    "sass-loader": "^6.0.2",
-    "vue": "^2.1.10"
+    "vue": "^2.1.10",
+    "vue-html": "^0.3.0",
+    "webpack-dev-server": "^2.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
