@@ -7,10 +7,7 @@
   "scripts": {
     "dist:dev": "webpack --config build/webpack.dist.dev.conf.js",
     "example": "webpack-dev-server --config build/webpack.example.conf.js --progress",
-    "dist:style": "gulp --gulpfile build/build-style.js",
-    "build": "node build/build.js",
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test": "npm run unit"
+    "dist:style": "gulp --gulpfile build/build-style.js"
   },
   "dependencies": {
     "gulp": "^3.9.1",
