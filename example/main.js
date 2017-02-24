@@ -3,6 +3,7 @@
 import Vue from "vue"
 import App from "./App"
 import UniComponent from "../src/index"
+import Style from "../src/styles/index.scss"
 
 // console.log(UniComponent);
 Vue.use(UniComponent);

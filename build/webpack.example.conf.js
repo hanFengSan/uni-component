@@ -14,7 +14,7 @@ module.exports = {
     },
     output: {
         filename: '[name]-[hash].js',
-        path: path.resolve(__dirname, '../example_build'),
+        path: resolve('example_build'),
         publicPath: '/example_build/',
     },
     resolve: {
@@ -44,7 +44,7 @@ module.exports = {
                 loader: 'style!css!autoprefixer'
             }, {
                 test: /\.scss$/,
-                loader: 'style!css!scss'
+                loaders: ["style-loader", "css-loader", "sass-loader"]
             }, {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader: 'url-loader',
@@ -60,14 +60,16 @@ module.exports = {
         new webpack.NoEmitOnErrorsPlugin(),
         new HtmlWebpackPlugin({
             filename: "index.html",
-            template: path.resolve(__dirname, '../example/index.html')
+            template: resolve('example/index.html')
         }),
         new FriendlyErrorsPlugin()
     ],
     devServer: {
-        contentBase: './public',
+        contentBase: '/',
+        // publicPath: '/',
         historyApiFallback: true,
         inline: true,
-        hot: true
+        hot: true,
+        port: 8300
     }
 }
